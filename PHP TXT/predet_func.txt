@@ -1,0 +1,116 @@
+String Functions:
+
+    strlen(): Get the length of a string.
+    str_replace(): Replace all occurrences of a substring in a string.
+    strpos(): Find the position of the first occurrence of a substring.
+
+Array Functions:
+
+    count(): Count the number of elements in an array.
+    array_push(): Add one or more elements to the end of an array.
+    array_merge(): Merge one or more arrays into a single array.
+
+Mathematical Functions:
+
+    abs(): Get the absolute value of a number.
+    sqrt(): Calculate the square root of a number.
+    rand(): Generate a random number.
+
+File System Functions:
+
+    file_get_contents(): Read the contents of a file into a string.
+    file_put_contents(): Write a string to a file.
+    unlink(): Delete a file.
+
+Date and Time Functions:
+
+    date(): Format a timestamp as a date string.
+    strtotime(): Parse a date/time string into a timestamp.
+    time(): Get the current Unix timestamp.
+
+Database Functions (using PDO or MySQLi):
+
+    mysqli_query(): Perform a query on a MySQL database.
+    pdo_prepare(): Prepare a statement for execution.
+
+HTTP Functions:
+
+    curl_init(): Initialize a cURL session for making HTTP requests.
+    file_get_contents(): Retrieve the contents of a URL.
+
+Regular Expression Functions:
+
+    preg_match(): Perform a regular expression match.
+    preg_replace(): Perform a regular expression search and replace.
+
+JSON Functions:
+
+    json_encode(): Convert a PHP array or object to a JSON string.
+    json_decode(): Decode a JSON string into a PHP variable.
+
+Session Functions:
+
+    session_start(): Start a new or resume the current session.
+    $_SESSION: Super global array for storing session variables.
+
+File System and Directory Functions:
+
+    file_exists(): Check if a file or directory exists.
+    is_file(): Check if the given path is a regular file.
+    is_dir(): Check if the given path is a directory.
+    scandir(): List files and directories in a directory.
+    mkdir(): Create a directory.
+    rmdir(): Remove a directory.
+
+Error Handling Functions:
+
+    error_reporting(): Set the error reporting level.
+    trigger_error(): Generate a user-level error/warning/notice message.
+    set_error_handler(): Set a user-defined error handler function.
+
+Session Management Functions:
+
+    session_start(): Start a new or resume an existing session.
+    session_destroy(): Destroy the current session.
+    session_regenerate_id(): Regenerate the session ID to improve security.
+
+Encryption and Hashing Functions:
+
+    password_hash(): Hash a password for secure storage.
+    password_verify(): Verify a password against a hashed value.
+    md5(): Calculate the MD5 hash of a string.
+    sha1(): Calculate the SHA-1 hash of a string.
+
+XML and HTML Functions:
+
+    simplexml_load_file(): Load an XML file into a SimpleXML object.
+    htmlspecialchars(): Convert special characters to their HTML entities.
+    htmlentities(): Convert all applicable characters to HTML entities.
+
+Image Manipulation Functions (requires the GD library):
+
+    imagecreatefromjpeg(): Create a new image from a JPEG file.
+    imagejpeg(): Output a JPEG image to the browser or a file.
+    imagecopyresized(): Copy and resize part of an image.
+
+Mail and Email Functions:
+
+    mail(): Send an email.
+    imap_open(): Open an IMAP stream to a mailbox.
+    smtp_send(): Send an email using SMTP.
+
+XML and JSON Parsing Functions:
+
+    json_encode(): Convert a PHP array or object to a JSON string.
+    json_decode(): Decode a JSON string into a PHP variable.
+    simplexml_load_string(): Load an XML string into a SimpleXML object.
+
+Session Cookies Functions:
+
+    setcookie(): Send a cookie to the browser for later retrieval.
+    $_COOKIE: Super global array for accessing cookies.
+
+Environment and Configuration Functions:
+
+    getenv(): Get an environment variable.
+    phpinfo(): Output information about PHP's configuration.

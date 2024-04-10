@@ -1,0 +1,27 @@
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">: This is where the fun part begins. 
+A form is like a digital paper where you can write your name. 
+When you submit the form, it sends your name to the server for processing. 
+The method="post" means we are sending the data in a way that's not shown in the web address. 
+action="<?php echo $_SERVER['PHP_SELF'];?>" tells the form to send the data back to this same page when you submit it.
+
+Name:<input type="text" name="fname">: This is where you type your name. 
+"Name" is a label, and <input type="text" name="fname"> is a text box where you can type your name. 
+The name="fname" is like a tag that helps the computer understand which part of the form you filled out.
+
+<input type="submit">: This is a button you can click to send your name to the server.
+
+<?php ... ?>: This is where we use a little bit of PHP. 
+PHP is a language that runs on the server and can do things like collecting and processing data from forms.
+In this code, it checks if you have submitted the form.
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {: This line checks if you clicked the submit button to send the form.
+
+$name = htmlspecialchars($_REQUEST['fname']);: If you submitted the form, 
+it takes the name you entered and stores it in a variable called $name. 
+It also makes sure the name is safe to display on the web by using htmlspecialchars.
+
+if (empty($name)) {: This checks if you didn't type a name.
+
+echo "Name is empty";: If your name is empty, it will say, "Name is empty."
+
+else { echo $name; }: If you did type your name, it will display your name on the web page.

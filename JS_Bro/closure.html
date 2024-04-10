@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="loginBtn">Login</button>
+    <script>
+        // a fuction with preserved and private data
+        // give access to an outer function's scope,
+        // from an innwe function
+
+        document.getElementById("loginBtn").onclick = login();
+
+        function login(){
+            let user = "visitha";
+            let indox = 2;
+
+            function alertUser(){
+                alert(`${user} you have ${indox} new unread messages`);
+                indox = 0;
+            }
+            return alertUser;
+        }
+    </script>
+</body>
+</html>

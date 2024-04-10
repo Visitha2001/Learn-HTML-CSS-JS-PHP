@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userName = "Visitha";
+        let userInbox = 2;
+
+        login();
+
+        function login(){
+            displayUser();
+            displayMassages();
+
+            function displayUser(){
+                console.log(`welcome ${userName}`);
+            }
+            function displayMassages() {
+                console.log(`You have ${userInbox} new unread messages`);
+            }
+        }
+    </script>
+</body>
+</html>

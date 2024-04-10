@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student{
+            constructor(name , age , gpa){
+                this.name = name;
+                this.age = age;
+                this.gpa = gpa;
+            }
+            study(){
+                console.log(`${this.name} is studying`);
+            }
+        }
+
+        const student1 = new student("visitha",22,3.5);
+        const student2 = new student("chamod",22,3.2);
+
+        console.log(student1.name);
+        console.log(student1.age);
+        console.log(student1.gpa);
+
+
+        console.log(`${student1.name} is ${student1.age} years old and he has ${student1.gpa}GPA score`);
+        console.log(`${student2.name} is ${student2.age} years old and he has ${student2.gpa}GPA score`);
+    </script>
+</body>
+</html>

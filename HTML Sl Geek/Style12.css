@@ -1,0 +1,19 @@
+h1{
+    color: brown;
+}
+p{
+    color: rebeccapurple;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    border: 2px solid blue;
+    padding: 20px;
+}
+#p1{
+    color: brown;
+}
+p.VNR{
+    color: yellow;
+}
+body{
+    background-color: aqua;
+}

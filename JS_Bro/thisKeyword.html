@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const car = {
+            model : "Lambogini",
+            year  : 2021,
+            color : "Mat Black",
+
+            drive : function(){
+                console.log(`You drive the ${this.model}`);
+            },
+            brake : function(){
+                console.log("You step on the brake");
+            }
+        }
+        // console.log(object.property) 
+        console.log(car.model);
+        console.log(car.color);
+        console.log(car.year);
+        // methods of object
+        car.drive();
+        car.brake();
+    </script>
+</body>
+</html> 

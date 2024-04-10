@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // map = object that holds key values of any data type
+        const store = new Map([
+            ['t-shirt' , 20],
+            ['jeans' , 5],
+            ['socks' , 2],
+            ['underwear' , 40]
+        ]); 
+
+        // add to store map
+        store.set('hat', 30);
+        store.set('bag', 25);
+
+        // delete from store map
+        store.delete('hat');
+
+        // display store size
+        console.log(`availability : ${store.size} items`);
+
+        // get values from store
+        let shoppingCart = 0;
+        shoppingCart += store.get('t-shirt');
+        shoppingCart += store.get('jeans');
+        shoppingCart += store.get('underwear');
+        console.log("total price of your cart : $" + shoppingCart);
+
+        //display items in the map
+        store.forEach((value,key) => console.log(`${key} - $${value}`));
+        
+    </script>
+</body>
+</html>

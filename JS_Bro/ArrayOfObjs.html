@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class car{
+            constructor( model , year , color){
+                this.model = model;
+                this.year = year;
+                this.color = color;
+            }
+            drive(){
+                console.log(`You drive the ${this.model}`);
+            }
+        }
+
+        const car1 = new car("benz" , 2021 , "black");
+        const car2 = new car("Lanbo" , 2023 , "black");
+        const car3 = new car("Buggati" , 2023 , "blue");
+        const car4 = new car("tesla" , 2022 , "white");
+        
+        const cars = [car1, car2, car3 , car4];
+
+        // cars[0].drive();
+        // cars[1].drive();
+        // cars[2].drive();
+        // cars[3].drive();
+
+        startRace(cars);
+        function startRace(cars){
+            for(const car of cars){
+                car.drive();
+            }
+        }
+    </script>
+</body>
+</html>

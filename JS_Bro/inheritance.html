@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class animal{
+            alive = true;
+            eat(){
+                console.log(`This ${this.name} is eating`);
+            }
+            sleep(){
+                console.log(`This ${this.name} is sleeping`);
+            }
+        }
+        class rabbit extends animal{
+            name = "rabbit";
+            run(){
+                console.log(`This ${this.name} is running`);
+            }
+        }
+        class fish extends animal{
+            name = "fish";
+            swim(){
+                console.log(`This ${this.name} is swimming`);
+            }
+        }
+        class parrot extends animal{
+            name = "parrot";
+            fly(){
+                console.log(`This ${this.name} is flying`);
+            }
+        }
+
+        const Rabbit = new rabbit();
+        const Fish = new fish();
+        const Parrot = new parrot();
+
+        console.log(Rabbit.alive);
+        Rabbit.eat();
+        Rabbit.sleep();
+        Rabbit.run();
+    </script>
+</body>
+</html>

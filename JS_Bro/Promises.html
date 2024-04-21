@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        const promise  = new Promise((resolve, reject) => {
+            let fileLoaded = false;
+            if (fileLoaded) {
+                resolve("File loaded");
+            }else {
+                reject("File not loaded");
+            }
+        });
+
+        promise.then(value => console.log(value))
+                .catch(error => console.log(error));
+    </script> -->
+    <script>
+        const wait = time => new Promise(resolve => {
+            setTimeout(resolve, time);
+        });
+
+        wait(3000).then(() => console.log("Thanks for waiting!"));
+    </script>
+</body>
+</html>

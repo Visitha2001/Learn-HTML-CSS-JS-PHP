@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myH1"></h1>
+    <script>
+        // async function loadFile(){//usng async function loadFile
+        //     let fileLoaded = false;
+        //     if(fileLoaded){
+        //         return "File loaded";
+        //     }
+        //     else{
+        //         throw "File NOT loaded";
+        //     }
+        // }//producing code
+        
+        // async function display(){
+        //     try{
+        //         document.getElementById("myH1").innerHTML = await loadFile();
+        //     }catch(e){
+        //         document.getElementById("myH1").innerHTML = e;
+        //     }
+        // }
+        // display();
+
+        //Anotherway
+        async function loadFile(){
+            const promise = new Promise((resolve, reject) => {
+                let fileLoaded = true;
+
+                if(fileLoaded){
+                    resolve("File loaded");
+                }
+                else{
+                    reject("File NOT loaded");
+                }
+            })
+
+            try{
+                document.getElementById("myH1").innerHTML = await promise;
+            }
+            catch(error){
+                document.getElementById("myH1").innerHTML = error;
+            }
+        }
+        loadFile();
+    </script>
+</body>
+</html>

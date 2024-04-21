@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class animal{
+            constructor(name ,  age){
+                this.name = name;
+                this.age = age;
+            }
+        }
+        class rabbit extends animal{
+            constructor(name ,  age, runSpeed){
+                super(name, age);
+                this.runSpeed = runSpeed;
+            }
+        }
+        class fish extends animal{
+            constructor(name ,  age, swimSpeed){
+                super(name, age);
+                this.runSpeed = swimSpeed;
+            }
+        }
+
+        const Rabbit = new rabbit("rabbit" , 2 , 30);
+        const Fish = new fish("gold fish" , 4 , 60);
+
+        console.log(Rabbit.name);
+        console.log(Rabbit.age);
+        console.log(Rabbit.runSpeed);
+
+        console.log(Fish.name);
+        console.log(Fish.age);
+        console.log(Fish.runSpeed);
+    </script>
+</body>
+</html>

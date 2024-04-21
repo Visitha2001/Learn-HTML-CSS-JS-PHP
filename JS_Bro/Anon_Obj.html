@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Card {
+            constructor(value , suit){
+                this.value = value;
+                this.suit = suit;
+            }
+        }
+        
+        let cards = [new Card("A", "Hearts"), 
+             new Card("A", "Spades"), 
+             new Card("A", "Diamonds"), 
+             new Card("A", "Clubs"), 
+             new Card("2", "Hearts"), 
+             new Card("2", "Spades"), 
+             new Card("2", "Diamonds"), 
+             new Card("2", "Clubs")];
+        
+        //cards.forEach(card => console.log(`${card.value} ${card.suit}`));
+        for (let i = 0; i < cards.length; i++){
+            const card = cards[i];
+            console.log(`${card.value} ${card.suit}`);
+        }//same as above (expanded)
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class car{
+            constructor( model , year , color){
+                this.model = model;
+                this.year = year;
+                this.color = color;
+            }
+        }
+
+        const car1 = new car("benz" , 2021 , "black");
+        const car2 = new car("Lanbo" , 2023 , "black");
+        const car3 = new car("Buggati" , 2023 , "blue");
+
+        changeColor(car2, "Gold");
+        displayInfo(car2);
+        function displayInfo(car){
+            console.log(car.model);
+            console.log(car.year);
+            console.log(car.color);
+        }
+
+        function changeColor(car , color){
+            car.color = color;
+        }
+    </script>
+</body>
+</html>     

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class car{
+        //     constructor(power){
+        //         this._gas = 25;
+        //         this._power = power; //underscore means protected(secured)
+        //     }
+        //     get power(){
+        //         return `${this._power} Hp`;
+        //     }
+        //     get gas(){
+        //         return `${this._gas} L (${this._gas / 50 * 100}%)`;
+        //     }
+        //     set gas(value){
+        //         if(value > 50){
+        //             value = 50;
+        //         }else if(value < 0){
+        //             value = 0;
+        //         }
+        //         this._gas = value;
+        //     }
+        // }
+        // let Car = new car(500);
+        // Car.gas = 30;
+
+        // console.log(Car.power);
+        // console.log(Car.gas);
+
+        class car{
+            constructor(power , gas){
+                this._gas = 25;
+                this._power = power; //underscore means protected(secured)
+            }
+            get power(){
+                return `${this._power} Hp`;
+            }
+            get gas(){
+                return `${this._gas} L (${this._gas / 50 * 100}%)`;
+            }
+            set gas(value){
+                if(value > 50){
+                    value = 50;
+                }else if(value < 0){
+                    value = 0;
+                }
+                this._gas = value;
+            }
+        }
+        let Car = new car(500 , 30);
+
+        console.log(Car.power);
+        console.log(Car.gas);
+   </script>
+</body>
+</html>
